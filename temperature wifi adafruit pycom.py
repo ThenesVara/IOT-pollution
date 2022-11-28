@@ -18,7 +18,8 @@ py = Pycoproc(Pycoproc.PYSENSE)
 dht = SI7006A20(py)
 
 # prendre la valeur de la temperature et de l'humidité du capteur
-temperature = str("{0:.1f}".format((dht.temperature()))) + " deg C"
+# !!! laisser la valeur en décimale/ entière sans indication pour avoir l'historique !!!
+temperature = str("{0:.1f}".format((dht.temperature())))
 
 
 def sub_cb(topic, msg):
@@ -29,9 +30,12 @@ def sub_cb(topic, msg):
 wlan = WLAN(mode=WLAN.STA)
 wlan.connect("Nomwifi", auth=(WLAN.WPA2, "password"), timeout=5000) #Nom wifi et password
 
+# indique que l'on est connecté au WIFI
 while not wlan.isconnected():
     machine.idle()
 print("Connected to WiFi\n")
+pycom.rgbled(0x0000FF)
+time.sleep(2)
 
 
 client = MQTTClient("device_id", "io.adafruit.com",
@@ -41,9 +45,12 @@ client.set_callback(sub_cb)
 client.connect()
 client.subscribe(topic="PFE_Pycom/feeds/temperature")
 
+# boucle qui envoie les données
 while True:
     print("Sending Temp")
     client.publish(topic="PFE_Pycom/feeds/temperature", msg=temperature)
     client.check_msg()
 
-    time.sleep(10) #envoi data après X secondes
+    pycom.rgbled(0x000000)
+    time.sleep(5) # boucle pour envoyer les données toutes les X secondes
+    pycom.rgbled(0xFF0000) # permet de faire clignoter la led en rouge à chaque envoi de donnée
