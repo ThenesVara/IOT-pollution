@@ -76,7 +76,7 @@ while True:
     print("la lumiere est de : ", lumiere)
     client1.publish(topic="PFE_Pycom/feeds/lumiere", msg=lumiere) # envoie de la valeur du capteur
     client1.check_msg()# checker si le message a été envoyé
-    pycom.rgbled(0xFF0000) # couleur violette : valeurs envoyé
+    pycom.rgbled(0xFF0000) # couleur rouge : valeurs envoyé
     
     time.sleep(5) # temps avant de recommencer la boucle
   
