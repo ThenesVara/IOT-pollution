@@ -24,7 +24,7 @@ Pour chaque type de donnée, il faut créer un feed sur votre compte adafruit.
 
 ![3](https://user-images.githubusercontent.com/114569016/205045633-2a1e71dd-511a-4265-834a-3918a0e78603.png)
 
-exemple : Création d'un feed temperature
+Exemple : Création d'un feed temperature
 
 ![4](https://user-images.githubusercontent.com/114569016/205045649-b821655c-c187-4531-b85d-01803b383405.png)
 
@@ -35,6 +35,8 @@ Dans le dashboard, vous pourrez récupérer et afficher toutes les données qui 
 ![5](https://user-images.githubusercontent.com/114569016/205045666-8ef42a42-77ef-43b9-a1e4-19300ccefc07.png)
 
 ![6](https://user-images.githubusercontent.com/114569016/205045678-c40796b3-bbb4-4f81-9194-8dc2e6f26719.png)
+
+![12](https://user-images.githubusercontent.com/114569016/205047414-a4c42ec8-2402-4ae1-a0ac-b83bf0963196.png)
 
 
 ## Code MQTT
