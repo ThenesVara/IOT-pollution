@@ -21,10 +21,8 @@ dht = SI7006A20(py)
 # !!! laisser la valeur en décimale/ entière sans indication pour avoir l'historique !!!
 temperature = str("{0:.1f}".format((dht.temperature())))
 
-
 def sub_cb(topic, msg):
     print(msg)
-
 
 # connexion au routeur
 wlan = WLAN(mode=WLAN.STA)
@@ -37,13 +35,9 @@ print("Connected to WiFi\n")
 pycom.rgbled(0x0000FF)
 time.sleep(2)
 
-
-client = MQTTClient("device_id", "io.adafruit.com",
-                    user="PFE_Pycom", password="aio_WoPB32roIJPXq6uKkwBlVHePiKiu", port=1883) #votre user adafruit et password
-
-client.set_callback(sub_cb)
+client = MQTTClient("device_id", "io.adafruit.com",user="PFE_Pycom", password="aio_WoPB32roIJPXq6uKkwBlVHePiKiu", port=1883) #votre user adafruit et password
 client.connect()
-client.subscribe(topic="PFE_Pycom/feeds/temperature")
+
 
 # boucle qui envoie les données
 while True:
