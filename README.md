@@ -3,13 +3,13 @@
 
 ## Wifi / Cloud :
 
-connexion wifi.py : la pycom se connecte au wifi
+Lire README.md pour connaitre la procedure pour envoyer des donnees de la pycom à adafruit
 
-temperature wifi adafruit pycom.py : pycom envoi les informations de température (1 topic) à Adafruit. Les données sont visibles sur le compte adafruit sélectionné.
+- connexion wifi.py : la pycom se connecte au wifi
 
-connexion 2 feeds adafruit.py : pycom envoi les informations de température et luminosité (2 topics) à Adafruit
+- temperature wifi adafruit pycom.py : pycom envoi les informations de température (1 topic) à Adafruit. Les données sont visibles sur le compte adafruit sélectionné.
 
-- Lire README.md pour connaitre la procedure pour envoyer des donnees de la pycom à adafruit
+- connexion 2 feeds adafruit.py : pycom envoi les informations de température et luminosité (2 topics) à Adafruit
 
 
 ## Serveur raspberry Pi - Mqtt
@@ -21,17 +21,17 @@ connexion 2 feeds adafruit.py : pycom envoi les informations de température et 
 
 # A faire :
 
-- Bluetooth : 
+## Bluetooth : 
 
-connexion bluetooth simple de la pycom en bluetooth
+- connexion bluetooth simple de la pycom en bluetooth
 
-Interface bluetooth (avec un télephone par exemple) qui récupère et affiche les données de la pycom 
+- Interface bluetooth (avec un télephone par exemple) qui récupère et affiche les données de la pycom 
 
 -> les données doivent etre visible sur une interface (comme pour adafruit)
 
-- Serveur :
+## Serveur :
 
-Création d'un serveur avec une raspberry Pi (avec module wifi ou raspi 4) - en Mqtt pour que la pycom puisse envoyer des informations à ce serveur.
+- Création d'un serveur avec une raspberry Pi (avec module wifi ou raspi 4) - en Mqtt pour que la pycom puisse envoyer des informations à ce serveur.
 
 
 
