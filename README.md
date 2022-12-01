@@ -18,12 +18,12 @@ Lire README.md pour connaitre la procedure pour envoyer des donnees de la pycom 
 
 ## Bluetooth
 
+- Connexion bluetooth simple de la pycom en bluetooth
+
 
 # A faire :
 
 ## Bluetooth : 
-
-- connexion bluetooth simple de la pycom en bluetooth
 
 - Interface bluetooth (avec un télephone par exemple) qui récupère et affiche les données de la pycom 
 
