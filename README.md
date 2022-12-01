@@ -1,10 +1,22 @@
 # IOT-pollution
 
-temperature wifi adafruit pycom.py : pycom (avec un capteur de température) se connecte au wifi indiqué et envoi les données à adafruit. Les données sont visibles sur le compte adafruit sélectionné
 
-Tutoriels :
+## Wifi / Cloud :
 
 connexion wifi.py : la pycom se connecte au wifi
+
+temperature wifi adafruit pycom.py : pycom envoi les informations de température (1 topic) à Adafruit. Les données sont visibles sur le compte adafruit sélectionné.
+
+connexion 2 feeds adafruit.py : pycom envoi les informations de température et luminosité (2 topics) à Adafruit
+
+- Lire README.md pour connaitre la procedure pour envoyer des donnees de la pycom à adafruit
+
+
+## Serveur raspberry Pi - Mqtt
+
+- Connexion MQTT entre raspberry et un ordinateur (sur un même réseau) -> envoi d'information, enregistrement des valeurs dans un Excel et création de courbes à partir des données du Excel
+
+## Bluetooth
 
 
 # A faire :
@@ -14,13 +26,6 @@ connexion wifi.py : la pycom se connecte au wifi
 connexion bluetooth simple de la pycom en bluetooth
 
 Interface bluetooth (avec un télephone par exemple) qui récupère et affiche les données de la pycom 
-
-- Cloud :
-Solutions (si possible gratuite) pour que la pycom envoi les données sur un cloud (voir les solutions proposés par Mieyeville)
-
-adafruit -> fait
-
-autres ?
 
 -> les données doivent etre visible sur une interface (comme pour adafruit)
 
