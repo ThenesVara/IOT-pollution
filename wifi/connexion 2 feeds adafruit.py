@@ -39,19 +39,9 @@ time.sleep(2)
 
 #-----------------------------------------------------------------------
 
-# création de 2 clients pour l'envoi des 2 valeurs des 2 capteurs
+# création client pour l'envoi des 2 valeurs des 2 capteurs
 client = MQTTClient("device_id", "io.adafruit.com", user="PFE_Pycom", password="aio_WoPB32roIJPXq6uKkwBlVHePiKiu", port=1883) #votre user adafruit et password
-client1 = MQTTClient("device_id2", "io.adafruit.com", user="PFE_Pycom", password="aio_WoPB32roIJPXq6uKkwBlVHePiKiu", port=1883) #votre user adafruit et password
-
-# subscribe au topic concerné : temperature
-client.set_callback(sub_cb)
 client.connect()
-client.subscribe(topic="PFE_Pycom/feeds/temperature")
-
-# subscribe au topic concerné : lumiere
-client1.set_callback(sub_cb)
-client1.connect()
-client1.subscribe(topic="PFE_Pycom/feeds/lumiere")
 
 #-----------------------------------------------------------------------
 
@@ -63,7 +53,6 @@ while True:
     temperature = str("{0:.1f}".format((dht.temperature()))) # prendre la valeur du capteur
     print("la temperature est : ", temperature) 
     client.publish(topic="PFE_Pycom/feeds/temperature", msg=temperature) # envoie de la valeur du capteur
-    client.check_msg()# checker si le message a été envoyé
     pycom.rgbled(0xFFD700) # couleur jaune : valeur envoyé
     
     # attente pour s'assurer de l'envoie des valeurs
@@ -74,9 +63,8 @@ while True:
     li_data = li.light()# prendre les valeurs du capteur
     lumiere = str(li_data[0])# prendre la valeur du capteur intéressante
     print("la lumiere est de : ", lumiere)
-    client1.publish(topic="PFE_Pycom/feeds/lumiere", msg=lumiere) # envoie de la valeur du capteur
-    client1.check_msg()# checker si le message a été envoyé
-    pycom.rgbled(0xFF0000) # couleur rouge : valeurs envoyé
+    client.publish(topic="PFE_Pycom/feeds/lumiere", msg=lumiere) # envoie de la valeur du capteur
+    pycom.rgbled(0xFF0000) # couleur rouge : valeur envoyé
     
     time.sleep(5) # temps avant de recommencer la boucle
   
