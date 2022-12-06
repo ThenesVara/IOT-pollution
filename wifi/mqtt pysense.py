@@ -11,7 +11,8 @@ import capteurs
 #-----------------------------------------------------------------------
 
 # led de couleur BLEUE
-pycom.rgbled(0x0080FF)
+pycom.rgbled(0x000020)
+print("Starting ...")
 
 # definition fonction pour répondre aux messages d'adafruit
 def sub_cb(topic, msg):
@@ -19,6 +20,8 @@ def sub_cb(topic, msg):
     if msg == b'1':
         nb_cycles= str(cycles)
         print('Nombre de cycles : '+ nb_cycles)
+        client.publish(topic="PFE_Pycom/feeds/cycles",msg=nb_cycles) # renvoie sur adafruit le nombre de cycles
+        client.check_msg()
 
 #-----------------------------------------------------------------------
 # connexion WIFI
@@ -29,7 +32,7 @@ wlan.connect("iPhone de Axel", auth=(WLAN.WPA2, "40Gopourtoi"), timeout=5000) #N
 while not wlan.isconnected():
     machine.idle()
 print("Connected to WiFi\n")
-pycom.rgbled(0x00FF00)
+pycom.rgbled(0x002000)
 time.sleep(2)
 
 #-----------------------------------------------------------------------
@@ -56,12 +59,12 @@ while True:
         client.publish(topic=topic[i],msg=data[i])
         client.check_msg() # regarder quels messages ont été envoyé
         print("Message envoye a : " + topic[i] + " | Valeur = " + data[i])
-        pycom.rgbled(0xFF0000)
+        pycom.rgbled(0x200000)
         time.sleep(1)
         # attente pour s'assurer de l'envoie des valeurs
     
     cycles += 1   # comptage des cycles
 
-    pycom.rgbled(0x0000FF)
+    pycom.rgbled(0x000020)
     time.sleep(5) # temps avant de recommencer la boucle
   
