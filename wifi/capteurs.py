@@ -1,4 +1,4 @@
-# Fichier qui permet de simplifier l'acquisition des données des différents capteurs de la Pysense
+# Fichier qui permet de simplifier l'acquisition des données des différents capteurs
 
 from pycoproc_1 import *
 from LIS2HH12 import LIS2HH12
@@ -6,14 +6,17 @@ from SI7006A20 import SI7006A20
 from LTR329ALS01 import LTR329ALS01
 from MPL3115A2 import MPL3115A2,ALTITUDE,PRESSURE
 
-pycom.heartbeat(False)
-pycom.rgbled(0x0A0A08) # white
-
 # initialisation des capteurs
 py = Pycoproc(Pycoproc.PYSENSE)
 
 #-----------------------------------------------------------------------
 # ===== Capteur MPL3115A2 =====
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!! Ce capteur obtient sa propre température rendant la mesure inutilisable !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+def temperature():
+    alt = MPL3115A2(py,mode=ALTITUDE)
+    temperature_data = str("{0:.1f}".format((alt.temperature())))
+    return temperature_data
 
 def altitude():
     alt = MPL3115A2(py,mode=ALTITUDE)
@@ -28,10 +31,11 @@ def pression():
 #-----------------------------------------------------------------------
 # ===== Capteur SI7006A20 =====
 
-def temperature():
-    dht = SI7006A20(py)
-    temperature_data = str("{0:.1f}".format((dht.temperature())))
-    return temperature_data
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!! Ce capteur obtient sa propre température rendant la mesure inutilisable !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# def temperature():
+#     dht = SI7006A20(py)
+#     temperature_data = str("{0:.1f}".format((dht.temperature())))
+#     return temperature_data
 
 def humidity():
     dht = SI7006A20(py)
