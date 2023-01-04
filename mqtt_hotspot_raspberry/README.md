@@ -29,6 +29,10 @@ Lorsque la connexion est faite:
 - username = admin
 - password = secret
 
-![2](https://user-images.githubusercontent.com/114569016/210551571-e4974098-840f-49e7-86f1-7769938c61aa.png)
+![3](https://user-images.githubusercontent.com/114569016/210552647-2052c6e9-79e9-4a72-a0a0-40074dda2e61.png)
 
 PS: Pensez à modifier le mot de passe !
+
+![2](https://user-images.githubusercontent.com/114569016/210551571-e4974098-840f-49e7-86f1-7769938c61aa.png)
+
+
