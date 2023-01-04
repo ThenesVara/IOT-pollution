@@ -17,6 +17,8 @@ curl -sL https://install.raspap.com | bash
 ## Connexion avec un ordinateur sur le hotspot de la raspberry:
 
 Pour la première connexion : 
+![1](https://user-images.githubusercontent.com/114569016/210551508-2874c79d-1dcb-4222-9c13-47392259973c.png)
+
 - Wifi : raspi-webgui
 - Mot de passe : ChangeMe
 
@@ -25,5 +27,7 @@ Lorsque la connexion est faite:
 - Se connecter à l'adresse Ip de la raspberry : 192.168.200.222
 - username = admin
 - password = secret
+
+![2](https://user-images.githubusercontent.com/114569016/210551571-e4974098-840f-49e7-86f1-7769938c61aa.png)
 
 PS: Pensez à modifier le mot de passe !
