@@ -12,9 +12,14 @@ Lire README.md pour connaitre la procedure pour envoyer des donnees de la pycom 
 - connexion 2 feeds adafruit.py : pycom envoi les informations de température et luminosité (2 topics) à Adafruit
 
 
-## Serveur raspberry Pi - Mqtt
+## Raspberry Pi - Mqtt
 
 - Connexion MQTT entre raspberry et un ordinateur (sur un même réseau) -> envoi d'information, enregistrement des valeurs dans un Excel et création de courbes à partir des données du Excel
+
+## Hotspot raspberry pi
+
+- Création d'un hotspot raspberry Pi
+- Connexion possible à la raspberry Pi avec un ordinateur ou téléphone grâce au hotspot de la raspi et son adresse IP
 
 ## Bluetooth
 
@@ -29,9 +34,9 @@ Lire README.md pour connaitre la procedure pour envoyer des donnees de la pycom 
 
 -> les données doivent etre visible sur une interface (comme pour adafruit)
 
-## Serveur :
+## Serveur hotspot raspi :
 
-- Création d'un serveur avec une raspberry Pi (avec module wifi ou raspi 4) - en Mqtt pour que la pycom puisse envoyer des informations à ce serveur.
+- Envoi d'information d'un ordinateur / pycom à la raspberry Pi
 
 
 
