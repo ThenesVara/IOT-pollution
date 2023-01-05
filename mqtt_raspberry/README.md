@@ -8,7 +8,7 @@ pip3 install paho-mqtt
 
 - Les 2 ordinateurs doivent être connectés au même réseau
 
-Ordinateur 1 : publishe
+Ordinateur 1 : publisher
 
 Ordinateur 2 : subscriber
 
