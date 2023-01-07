@@ -20,6 +20,7 @@ Lire README.md pour connaitre la procedure pour envoyer des donnees de la pycom 
 
 - Création d'un hotspot raspberry Pi
 - Connexion possible à la raspberry Pi avec un ordinateur ou téléphone grâce au hotspot de la raspi et son adresse IP
+- Connexion de la pycom sur le hotspot de la raspberry Pi
 
 ## Bluetooth
 
@@ -36,7 +37,7 @@ Lire README.md pour connaitre la procedure pour envoyer des donnees de la pycom 
 
 ## Serveur hotspot raspi :
 
-- Envoi d'information d'un ordinateur / pycom à la raspberry Pi
+- Envoi d'information d'une pycom à la raspberry Pi
 
 
 
