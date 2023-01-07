@@ -5,6 +5,11 @@ Install Librairies :
 pip3 install openpyxl
 pip3 install paho-mqtt
 ```
+Mosquitto
+```
+sudo apt-get install -y mosquitto mosquitto-clients
+sudo systemctl enable mosquitto
+```
 
 - Les 2 ordinateurs doivent être connectés au même réseau
 
