@@ -1,9 +1,14 @@
+# Pycom - raspberry pi
+mqtt.py : librairie mqtt utilisée par la pycom (à upload)
+
+# Tutoriel - Hotspot raspberry Pi
+
 Tutoriel mise en place du hotspot de la raspberry : 
 - https://raspap.com/#quick
 
 - Vidéo tutoriel : https://www.youtube.com/watch?v=QWP81nG9zH0&ab_channel=Devyan
 
-## Instructions sur la raspberry:
+### Instructions sur la raspberry:
 ```
 sudo apt-get update
 sudo apt-get full-upgrade
@@ -14,7 +19,7 @@ Install Raspap :
 curl -sL https://install.raspap.com | bash
 ```
 
-## Connexion avec un ordinateur sur le hotspot de la raspberry:
+### Connexion avec un ordinateur sur le hotspot de la raspberry:
 
 Pour la première connexion : 
 
