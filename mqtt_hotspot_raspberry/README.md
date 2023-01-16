@@ -21,12 +21,17 @@ curl -sL https://install.raspap.com | bash
 
 ### Connexion avec un ordinateur sur le hotspot de la raspberry:
 
-Pour la première connexion : 
+Pour la première connexion (setup) : 
 
 ![1](https://user-images.githubusercontent.com/114569016/210551508-2874c79d-1dcb-4222-9c13-47392259973c.png)
 
 - Wifi : raspi-webgui
 - Mot de passe : ChangeMe
+
+Pour notre raspberry du RIR : 
+
+- Wifi : RIRraspberry
+- Mot de passe : Raspberrypi
 
 Lorsque la connexion est faite:
 - Ouvrir un navigateur internet 
