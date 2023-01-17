@@ -2,6 +2,8 @@
 
 pycom wifi to raspi hotspot.py : la pycom se connecte au hotspot de la raspberry Pi
 
+- Ajout de librairie mqtt : https://github.com/ThenesVara/IOT-pollution/tree/main/wifi#ajout-dune-librairie
+
 ## Vérification sur la raspberry Pi:
 
 - Ouvrir un navigateur internet 
