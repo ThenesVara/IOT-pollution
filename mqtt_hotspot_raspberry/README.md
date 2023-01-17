@@ -1,5 +1,4 @@
 # Pycom - raspberry pi
-mqtt.py : librairie mqtt utilisée par la pycom (à upload)
 
 # Tutoriel - Hotspot raspberry Pi
 
