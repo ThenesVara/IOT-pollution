@@ -40,6 +40,7 @@ Dans le dashboard, vous pourrez récupérer et afficher toutes les données qui 
 
 
 ## Code MQTT
+
 Dans le code, il vous faudra modifier les informations du wifi, de votre compte adafruit (IO Key) et le nom des topics.
 
 - Wifi : Modifier votre nomwifi et motdepasse selon le wifi sur lequel votre pycom se connecte
@@ -54,11 +55,14 @@ Dans le code, il vous faudra modifier les informations du wifi, de votre compte 
 - Topic : dans les clients.subscribe et client.publish modifier le nom du topic
 
 Nom du topic : 
+
 ![7](https://user-images.githubusercontent.com/114569016/205045957-5b6cf9b2-1179-4c31-b8a6-a33692dd4334.png)
 
 ![10](https://user-images.githubusercontent.com/114569016/205045866-24a4a01f-d82c-4423-8c8d-96fc44e5c3f3.png)
 
 ![11](https://user-images.githubusercontent.com/114569016/205045881-101009f5-e424-4d30-9a6d-142375c9c5bb.png)
+
+PS : la donnee temperature envoyée est une chaine de caractere.
 
 ## Librairie 
 
@@ -66,5 +70,13 @@ Nom du topic :
 Récupérer le fichier librairie puis upload sur la pycom 
 
 - exemple : librairie mqtt.py : https://github.com/pycom/pycom-libraries/blob/master/lib/mqtt/mqtt.py
-Il faudra upload cette librairie sur la pycom.
+
+Enregistrer le fichier mqtt.py dans votre projet.
+
+Upload cette librairie sur la pycom.
+
+Ensuite, vous pouvez importer la librairie mqtt dans votre code.
+
+![image](https://user-images.githubusercontent.com/114569016/212953700-fc79f1d5-4beb-4d97-ba22-1008e7dfbf21.png)
+
 
