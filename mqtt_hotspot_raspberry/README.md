@@ -35,7 +35,7 @@ Pour notre raspberry du RIR :
 
 Lorsque la connexion est faite:
 - Ouvrir un navigateur internet 
-- Se connecter à l'adresse Ip de la raspberry : 192.168.200.222
+- Se connecter à l'adresse Ip de la raspberry : 192.168.200.222  OU  10.3.141.1
 - username = admin
 - password = secret
 
