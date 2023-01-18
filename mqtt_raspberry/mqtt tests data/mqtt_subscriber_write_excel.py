@@ -9,7 +9,7 @@ def on_connect(client, userdata, flags, rc):
 
     # Subscribing in on_connect() means that if we lose the connection and
     # reconnect then subscriptions will be renewed.
-    client.subscribe([("test", 2), ("test2", 1), ("topic3", 1)])
+    client.subscribe([("test1", 1), ("test2", 1), ("topic3", 1)])
 
 
 
