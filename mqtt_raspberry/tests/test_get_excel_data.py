@@ -2,7 +2,10 @@
 
 import openpyxl
 
-wb = openpyxl.load_workbook('/home/thenes/mqtt_connexion/tests/data.xlsx') #give the full path of the file here
+path = '/home/thenes/mqtt_raspberry/tests/data.xlsx'
+
+
+wb = openpyxl.load_workbook(path) #give the full path of the file here
 sh = wb.active
 
 
