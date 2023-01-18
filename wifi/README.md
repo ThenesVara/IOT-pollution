@@ -12,7 +12,7 @@
 
 - Récupérer IO Key -> username et active Key
 
-![2](https://user-images.githubusercontent.com/114569016/205045447-8f827e6a-b65a-4093-b0fc-36b8ee353c95.png)
+<img src="https://user-images.githubusercontent.com/114569016/205045447-8f827e6a-b65a-4093-b0fc-36b8ee353c95.png" width=50% height=50%>
 
 Ces informations permettront à la pycom d'envoyer les infos sur votre compte adafruit
 
@@ -22,21 +22,50 @@ Ces informations permettront à la pycom d'envoyer les infos sur votre compte ad
 ### Feed
 Pour chaque type de donnée, il faut créer un feed sur votre compte adafruit.
 
-![3](https://user-images.githubusercontent.com/114569016/205045633-2a1e71dd-511a-4265-834a-3918a0e78603.png)
+<img src="https://user-images.githubusercontent.com/114569016/205045633-2a1e71dd-511a-4265-834a-3918a0e78603.png" width=50% height=50%>
+
 
 Exemple : Création d'un feed temperature
 
-![4](https://user-images.githubusercontent.com/114569016/205045649-b821655c-c187-4531-b85d-01803b383405.png)
-
+<img src="https://user-images.githubusercontent.com/114569016/205045649-b821655c-c187-4531-b85d-01803b383405.png" width=50% height=50%>
 
 ### Dashboard
 Dans le dashboard, vous pourrez récupérer et afficher toutes les données qui vous intéressent.
 
-![5](https://user-images.githubusercontent.com/114569016/205045666-8ef42a42-77ef-43b9-a1e4-19300ccefc07.png)
+<img src="https://user-images.githubusercontent.com/114569016/205045666-8ef42a42-77ef-43b9-a1e4-19300ccefc07.png" width=50% height=50%>
 
-![6](https://user-images.githubusercontent.com/114569016/205045678-c40796b3-bbb4-4f81-9194-8dc2e6f26719.png)
+<img src="https://user-images.githubusercontent.com/114569016/205045678-c40796b3-bbb4-4f81-9194-8dc2e6f26719.png" width=50% height=50%>
 
-![12](https://user-images.githubusercontent.com/114569016/205047414-a4c42ec8-2402-4ae1-a0ac-b83bf0963196.png)
+<img src="https://user-images.githubusercontent.com/114569016/205047414-a4c42ec8-2402-4ae1-a0ac-b83bf0963196.png" width=50% height=50%>
+
+
+
+### Enregistrer les données obtenues 
+
+Dans votre compte adafruit, dans vos feeds, vous pouvez enregistrer les données (en local).
+
+![image](https://user-images.githubusercontent.com/114569016/213159129-e463fde0-450d-466e-a237-f9878bdd5949.png)
+
+- Enregistrer les données en csv
+
+![image](https://user-images.githubusercontent.com/114569016/213160177-dc19ae3c-308c-4914-9d90-1dfcfae9c11e.png)
+
+- Ouvrir excel
+
+- Importer le fichier de données csv 
+
+![image](https://user-images.githubusercontent.com/114569016/213159948-23fd222c-c309-400a-8eee-ddd039d89e36.png)
+
+- Vous pouvez modifier le nom et organiser vos données par période, par localisation, dans des classeurs etc...
+
+![image](https://user-images.githubusercontent.com/114569016/213160893-281aad4d-f849-4886-98c6-07665778d6ec.png)
+
+
+
+
+
+
+
 
 
 ## Code MQTT
@@ -54,9 +83,7 @@ Dans le code, il vous faudra modifier les informations du wifi, de votre compte 
 
 - Topic : dans les clients.subscribe et client.publish modifier le nom du topic
 
-Nom du topic : 
-
-![7](https://user-images.githubusercontent.com/114569016/205045957-5b6cf9b2-1179-4c31-b8a6-a33692dd4334.png)
+Nom du topic : Thenes/feeds/temperature
 
 ![10](https://user-images.githubusercontent.com/114569016/205045866-24a4a01f-d82c-4423-8c8d-96fc44e5c3f3.png)
 
