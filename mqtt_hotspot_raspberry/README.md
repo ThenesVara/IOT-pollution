@@ -1,6 +1,6 @@
 # Pycom - raspberry pi
 
-# Tutoriel - Hotspot raspberry Pi
+# Tutoriel - RASPAP Hotspot raspberry Pi
 
 Tutoriel mise en place du hotspot de la raspberry : 
 - https://raspap.com/#quick
