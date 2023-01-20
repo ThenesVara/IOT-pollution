@@ -18,6 +18,7 @@ Voir 3 - https://randomnerdtutorials.com/esp32-esp8266-raspberry-pi-lamp-server/
 
 Voir 4 - https://randomnerdtutorials.com/esp32-esp8266-raspberry-pi-lamp-server/ 
 
+
 ## ESP32
 
 Voir 5 - https://randomnerdtutorials.com/esp32-esp8266-raspberry-pi-lamp-server/ 
@@ -30,9 +31,23 @@ La raspberry et l'esp32 doivent être connectés sur le même réseau
 ```
 hostname -I
 ``` 
+![11](https://user-images.githubusercontent.com/114569016/213727810-775a8435-ec58-412f-b54a-a96394e9c4ca.png)
+
 
 - Sur arduino, ouvrir le code : esp32_php_raspi.ino
 
 esp32_php_raspi.ino : se connecte sur le réseau renseigné et envoi des valeurs (à l'adresse IP) à la base de donnée de la raspberry pi
 
 Vous pouvez modifier le code pour récupérer des données de capteurs
+
+
+## Nore base de donnée 
+
+Sur la raspberry pi, aller sur un navigateur : 
+
+- Affiche les données reçus
+
+http://localhost/esp-data.php  OU  http://Your-Raspberry-Pi-IP-Address/esp-data.php
+
+![111](https://user-images.githubusercontent.com/114569016/213727747-6ed4ca18-0ebe-4729-92d9-b9d6a8fecdf4.png)
+
