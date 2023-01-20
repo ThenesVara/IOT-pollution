@@ -1,9 +1,3 @@
-# Courbes data
-
-courbes_from_excel_data.py : Récupère les donnees de l'excel (.xlsx) et trace des courbes avec les topics
-
-![courbe](https://user-images.githubusercontent.com/114569016/213712374-87381ecd-51c0-47be-9246-88c450b854fb.png)
-
 
 # Librairies
 
@@ -70,6 +64,12 @@ password : raspberry
 
 ![convert xlsx](https://user-images.githubusercontent.com/114569016/213706549-baadc74f-0b49-40b1-af1b-b292a28f65fc.png)
 
+
+# Courbes data
+
+courbes_from_excel_data.py : Récupère les donnees de l'excel (.xlsx) et trace des courbes avec les topics
+
+![courbe](https://user-images.githubusercontent.com/114569016/213712374-87381ecd-51c0-47be-9246-88c450b854fb.png)
 
 
 
