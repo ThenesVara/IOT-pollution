@@ -1,6 +1,21 @@
-## Enregistrer les données obtenues en xlsx
+# Courbes data
 
-### Adafruit
+courbes_from_excel_data.py : Récupère les donnees de l'excel (.xlsx) et trace des courbes avec les topics
+
+![courbe](https://user-images.githubusercontent.com/114569016/213712374-87381ecd-51c0-47be-9246-88c450b854fb.png)
+
+
+# Librairies
+
+Install Librairies :
+```
+pip3 install openpyxl
+pip3 install matplotlib
+```
+
+# Enregistrer les données obtenues en xlsx
+
+## Adafruit
 
 Dans votre compte adafruit, dans vos feeds, vous pouvez enregistrer les données (en local).
 
