@@ -30,12 +30,22 @@ Dans votre compte adafruit, dans vos feeds, vous pouvez enregistrer les données
 
 - Ouvrir une page internet sur : http://localhost/phpmyadmin/ OU http://ADRESSEIP/phpmyadmin/
 
+![connect](https://user-images.githubusercontent.com/114569016/213706180-61395d9f-d97e-42cd-addb-1098cbd7ce4a.png)
+
 - Aller sur les données que vous voulez récupérer : dans notre cas : esp_data/SensorData
 
 - Exporter
 
+![export](https://user-images.githubusercontent.com/114569016/213706227-256ec995-9484-42dc-ba68-ebc5e9f0f04b.png)
+
 - Exporter en csv
 
+![export csv](https://user-images.githubusercontent.com/114569016/213706386-ffb22dd7-2355-4e02-b90d-9ab405bc1c90.png)
+
 - Sur libreoffice ou Excel, convertir le csv en xlsx
+
+![convert xlsx](https://user-images.githubusercontent.com/114569016/213706549-baadc74f-0b49-40b1-af1b-b292a28f65fc.png)
+
+
 
 
