@@ -53,5 +53,5 @@ http://localhost/esp-data.php  OU  http://Your-Raspberry-Pi-IP-Address/esp-data.
 
 ## Récupérer les données de la base de donnée
 
-https://github.com/ThenesVara/IOT-pollution/tree/main/Raspberry%20server/Database%20php%20raspberry%20local/csv_data_courbes_excel#enregistrer-les-donn%C3%A9es-obtenues-en-xlsx
+https://github.com/ThenesVara/IOT-pollution/tree/main/Raspberry%20server/Database%20php%20raspberry%20local/csv_data_courbes_excel#phpmyadmin-raspberry
 
