@@ -41,11 +41,20 @@ Dans votre compte adafruit, dans vos feeds, vous pouvez enregistrer les données
 
 - Se connecter sur votre serveur local (dans notre cas sur la raspberry Pi)
 
-- Commande pour vérifier l'adresse IP : 'hostname -I'
+- Commande pour vérifier l'adresse IP : 
+```
+hostname -I
+```
 
 - Ouvrir une page internet sur : http://localhost/phpmyadmin/ OU http://ADRESSEIP/phpmyadmin/
 
 ![connect](https://user-images.githubusercontent.com/114569016/213706180-61395d9f-d97e-42cd-addb-1098cbd7ce4a.png)
+
+- Notre raspberry database : 
+
+username : pi
+
+password : raspberry
 
 - Aller sur les données que vous voulez récupérer : dans notre cas : esp_data/SensorData
 
