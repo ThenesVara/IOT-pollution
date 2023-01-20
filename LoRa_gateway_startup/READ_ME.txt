@@ -1,0 +1,2 @@
+création de la gateway par The Things Network. un compte spécifique sera créé pour le projet
+il faut enregistrer la gateway sur TTN. cela génèrera une ID pour la gateway, ainsi qu'un fichier global_conf.json qui contient entre autres cet ID et l'adresse du serveur sur lequel la gateway se connecte en WiFi. ce fichier doit être téléchargé et téléversé dans la gateway elle-même avec le code. 
