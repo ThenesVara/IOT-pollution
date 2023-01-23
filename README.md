@@ -36,7 +36,11 @@ Il est posible de récupérer les données de l'excel et tracer des courbes.
 # A faire :
 ## Bluetooth : 
 
+-
+
 ## LoRa
+
+-
 
 ## Serveur hotspot raspi :
 
