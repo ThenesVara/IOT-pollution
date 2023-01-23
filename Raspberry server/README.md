@@ -11,3 +11,5 @@ Nous n'avons pas réussi à envoyer des données de l'esp32 à la raspberry avec
 Mais nous avons réussi : 
 
 -> à se connecter à l'hotspot de la raspberry pi avec l'esp32
+
+-> esp32 se connecte au hotspot de la raspberry pi pour envoyer des données sur adafruit
