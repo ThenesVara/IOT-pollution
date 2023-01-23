@@ -1,13 +1,13 @@
 # Pycom - raspberry pi
 
-# Tutoriel - RASPAP Hotspot raspberry Pi
+## Tutoriel - RASPAP Hotspot raspberry Pi
 
 Tutoriel mise en place du hotspot de la raspberry : 
 - https://raspap.com/#quick
 
 - Vidéo tutoriel : https://www.youtube.com/watch?v=QWP81nG9zH0&ab_channel=Devyan
 
-### Instructions sur la raspberry:
+## Instructions sur la raspberry:
 ```
 sudo apt-get update
 sudo apt-get full-upgrade
@@ -18,7 +18,7 @@ Install Raspap :
 curl -sL https://install.raspap.com | bash
 ```
 
-### Connexion avec un ordinateur sur le hotspot de la raspberry:
+## Connexion avec un ordinateur sur le hotspot de la raspberry:
 
 Pour la première connexion (setup) : 
 
@@ -45,3 +45,6 @@ PS: Pensez à modifier le mot de passe !
 ![2](https://user-images.githubusercontent.com/114569016/210551571-e4974098-840f-49e7-86f1-7769938c61aa.png)
 
 
+## Autres librairies (capteurs) :
+
+voir dans IOT-pollution/wifi/lib/
