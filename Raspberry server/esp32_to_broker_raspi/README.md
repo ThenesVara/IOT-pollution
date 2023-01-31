@@ -65,7 +65,11 @@ sudo systemctl status mosquitto
 ```
 #### Activer moquitto-client
 
-https://stackoverflow.com/questions/24556160/mosquitto-client-obtain-refused-connection?fbclid=IwAR0WUCksy6o98-WXznslFZKJHkOA5ck3pmP6M_8lMOtzQn6aqq0ffJl-Jwc
+-> problème rencontré : https://stackoverflow.com/questions/24556160/mosquitto-client-obtain-refused-connection?fbclid=IwAR0WUCksy6o98-WXznslFZKJHkOA5ck3pmP6M_8lMOtzQn6aqq0ffJl-Jwc
+
+-> Solution :
+
+Modifier fichier mosquitto
 
 ```
 cd /etc/mosquitto/
@@ -82,5 +86,13 @@ Ajouter les lignes suivantes sur le fichier :
 ```
 allow_anonymous true
 listener 1883 0.0.0.0
+```
+
+Faire : Ctrl + X puis O. Cliquer sur la touche entrée. Le fichier a été modifié.
+
+Relancer mosquitto :
+
+```
+sudo service mosquitto restart
 ```
 
