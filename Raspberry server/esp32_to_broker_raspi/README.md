@@ -8,7 +8,8 @@ https://github.com/jiteshsaini/mqtt-demo
 
 - rpi_mqtt_clients (Raspberry Pi code) :
 
-client_esp_sub.py
+client_esp_sub.py :
+
 Souscrit à tous les topics (de la raspberry et de l'esp32). Les données reçus sont affichés sur le terminal. 
 
 ### esp32 
