@@ -53,7 +53,7 @@ Il est posible de récupérer les données de l'excel et tracer des courbes.
 
 ## Serveur hotspot raspi :
 
-- la raspberry pi est le broker à laquelle l'esp envoi des données
+- la raspberry pi (hotspot) est le broker à laquelle l'esp envoi des données
 
 
 # Les capteurs qu'on va recevoir :
