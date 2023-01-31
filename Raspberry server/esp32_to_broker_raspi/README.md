@@ -2,6 +2,29 @@
 
 https://github.com/jiteshsaini/mqtt-demo
 
+## Code
+
+### raspberry
+
+- rpi_mqtt_clients (Raspberry Pi code) :
+
+client_esp_sub.py
+Souscrit à tous les topics (de la raspberry et de l'esp32). Les données reçus sont affichés sur le terminal. 
+
+### esp32 
+#### Arduino
+
+esp32_clients (ESP 32 code) : esp_publish_raspi_broker_mqtt.ino
+
+Envoi des données au broker mqtt de la raspberry. 
+
+#### Micropython
+esp_micropython_data_to_broker_raspi_mqtt.py
+
+Envoi des données au broker mqtt de la raspberry. 
+
+
+
 ## BROKER MQTT raspberry
 
 ### Raspberry 
@@ -60,18 +83,4 @@ Ajouter les lignes suivantes sur le fichier :
 allow_anonymous true
 listener 1883 0.0.0.0
 ```
-
-## Code
-
-### raspberry
-
-- rpi_mqtt_clients (Raspberry Pi code) :
-
-client_sub.py
-Souscrit à tous les topics (de la raspberry et de l'esp32). Les données reçus sont affichés sur le terminal. 
-
-#### esp32 - Arduino
-
-esp32_clients (ESP 32 code)
-Envoi des données au broker mqtt de la raspberry. 
 
