@@ -15,6 +15,8 @@ Lire README.md pour connaitre la procedure pour envoyer des donnees de la pycom 
 - Création d'un hotspot raspberry Pi (Raspap)
 
 - pycom data to adafruit with raspi hotspot.py : l'esp32 se connecte au hotspot de la raspberry pour envoyer des données à adafruit. La raspberry est en hotspot et connecté en ethernet (ou autre) à internet. Envoi des données.
+
+- esp_micropython_data_to_broker_raspi_mqtt.py : l'esp32 se connecte au hotspot de la raspberry pour envoyer des données à adafruit. La raspberry est en hotspot et N'EST PAS CONNECTE à internet. Envoi des données. La raspberry peut récupérer les données du topic de l'esp32 avec : client_raspi_sub_to_esp32.py
     
 
 ### Database php (sans MQTT)
