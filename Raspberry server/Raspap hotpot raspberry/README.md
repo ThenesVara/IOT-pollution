@@ -8,17 +8,19 @@
 
 La raspberry pi est en hotspot (en ethernet). L'esp32/pycom se connecte à l'hotspot de la raspberry pour envoyer des informations à adafruit.
 
+- csv_data_courbes_excel : enregistrer les données d'adafruit en csv en .xlsx (excel) puis tracer les courbes en python.
+
 ## Local
 
-esp_micropython_data_to_broker_raspi_mqtt.py :
+- esp_micropython_data_to_broker_raspi_mqtt.py :
 
 La raspberry pi est en hotspot (en local). L'esp32/pycom se connecte à l'hotspot de la raspberry pour envoyer des informations à la raspberry (en local).
 
-client_raspi_sub_to_esp32.py :
+- client_raspi_sub_to_esp32.py :
 
 La raspberry s'abonne aux topics et récupère les données (en local) de l'esp32.
 
-## Tutoriel - RASPAP Hotspot raspberry Pi
+# Tutoriel - RASPAP Hotspot raspberry Pi
 
 Tutoriel mise en place du hotspot de la raspberry : 
 - https://raspap.com/#quick
