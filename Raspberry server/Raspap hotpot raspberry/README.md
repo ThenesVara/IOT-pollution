@@ -10,6 +10,8 @@ La raspberry pi est en hotspot (en ethernet). L'esp32/pycom se connecte à l'hot
 
 - csv_data_courbes_excel : enregistrer les données d'adafruit en csv en .xlsx (excel) puis tracer les courbes en python.
 
+Création compte adafruit : https://github.com/ThenesVara/IOT-pollution/tree/main/wifi#proc%C3%A9dure-pour-envoyer-des-donn%C3%A9es-sur-adafruit
+
 ## Local
 
 - esp_micropython_data_to_broker_raspi_mqtt.py :
